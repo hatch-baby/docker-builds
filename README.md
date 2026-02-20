@@ -132,9 +132,9 @@ docker build -t my-ansible:latest .
 
 Each image directory contains its own README with specific usage instructions and configuration details.
 
-## Maintainer
+## Maintainers
 
-Ken DeLong <kenwdelong@gmail.com>
+Hatch Ops <ops@hatchbaby.com>
 
 ## License
 
