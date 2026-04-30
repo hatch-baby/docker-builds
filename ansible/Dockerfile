@@ -14,7 +14,7 @@ RUN dnf -y update &&\
     dnf -y install bash-completion less mariadb1011-client-utils openssh openssh-clients openssl openssl-pkcs11 sudo wget zip unzip python${PYTHON_VERSION} 
 
 # system version
-RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python${PYTHON_SYSTEM_VERSION} get-pip.py
+RUN curl https://bootstrap.pypa.io/pip/3.9/get-pip.py -o get-pip.py && python${PYTHON_SYSTEM_VERSION} get-pip.py
 
 # install boto for both system python and modern python
 # add packaging to stop error in ansible route53 module
