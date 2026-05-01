@@ -53,13 +53,6 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awsc
     /tmp/aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update &&\
     rm -rf /tmp/awscliv2.zip /tmp/aws
 
-## Install AWS SAM CLI using zip file from the latest release
-#RUN curl -Lo /tmp/aws-sam-cli-linux-x86_64.zip https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip && \
-#    unzip /tmp/aws-sam-cli-linux-x86_64.zip -d /tmp/sam-install && \
-#    /tmp/sam-install/install --update --bin-dir /usr/local/bin --install-dir /usr/local/aws-sam-cli && \
-#    rm -rf /tmp/aws-sam-cli-linux-x86_64.zip /tmp/sam-install && \
-#    sam --version
-
 # Install uv
 RUN curl -LsSf https://astral.sh/uv/$UV_VERSION/install.sh | UV_INSTALL_DIR=/usr/local/bin sh
 
