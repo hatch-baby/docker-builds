@@ -26,4 +26,4 @@ RUN dnf -y update &&\
     rm "$TMP_FILE"
 
 # If I set the path up above with the other ENV vars, it doesn't work.
-ENV PATH $JAVA_HOME/bin:$PATH
+ENV PATH=$JAVA_HOME/bin:$PATH
