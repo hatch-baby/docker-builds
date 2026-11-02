@@ -1,4 +1,4 @@
-FROM amazonlinux:2023.12.20260930.1
+FROM amazonlinux:2023.12.20260930.0
 # 
 # Using the above image, which does not match all.yml, because that's the closest tag available
 # Tags are here: https://hub.docker.com/_/amazonlinux/tags
