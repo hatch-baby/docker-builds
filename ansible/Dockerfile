@@ -1,10 +1,10 @@
-FROM amazonlinux:2023.12.20260706.1   
+FROM amazonlinux:2023.12.20260930.1   
 LABEL maintainer="Ken DeLong <kenwdelong@gmail.com>"
 LABEL org.opencontainers.image.source="https://github.com/kenwdelong/docker-builds"
 LABEL org.opencontainers.image.description="Custom Python container for Ansible + MySQL tasks"
 
 ENV WORK="/work" \
-    ANSIBLE_VERSION=14.2.0 \
+    ANSIBLE_VERSION=14.5.0 \
     PYTHON_VERSION=3.14 \
     PYTHON_SYSTEM_VERSION=3.9 \
     LANG=C.UTF-8 \
