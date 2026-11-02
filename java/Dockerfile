@@ -1,4 +1,4 @@
-FROM amazonlinux:2023.12.20260706.1
+FROM amazonlinux:2023.12.20260930.1
 # 
 # Using the above image, which does not match all.yml, because that's the closest tag available
 # Tags are here: https://hub.docker.com/_/amazonlinux/tags
@@ -7,8 +7,8 @@ LABEL maintainer="Ken DeLong <kenwdelong@gmail.com>"
 LABEL org.opencontainers.image.source="https://github.com/kenwdelong/docker-builds"
 LABEL org.opencontainers.image.description="Container with Azul Zulu Java"
 
-ENV JAVA_VERSION=25.0.4 \
-    ZULU_VERSION=25.36.15-ca \
+ENV JAVA_VERSION=25.0.5.0.3 \
+    ZULU_VERSION=25.38.109-ca \
     JAVA_HOME=/usr/local/java \
     TMP_DIR=/tmp/java \
     TMP_FILE=$TMP_DIR/java.tar.gz
